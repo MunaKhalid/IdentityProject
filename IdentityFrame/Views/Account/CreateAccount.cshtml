@@ -1,0 +1,64 @@
+﻿
+@model SignUpModel
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+@section Body{
+ 
+
+    <form method="post">
+    <div class="container" style="margin-top: 6px;">
+    <div class="row">
+        <div class="col-xs-6">
+        <div class="form-group">
+        <span>Name</span>
+        <input type="text" asp-for="Name"/>
+         <span asp-validation-for="Name"></span>
+    </div></div></div>
+
+     <div class="row">
+        <div class="col-xs-6">
+        <div class="form-group">
+        <span>BDate</span>
+        <input type="date" asp-for="bdate"/>
+         <span asp-validation-for="bdate"></span>
+    </div></div></div>
+     <div class="row">
+        <div class="col-xs-6">
+        <div class="form-group">
+        <span>UserName</span>
+        <input type="text" asp-for="username" />
+         <span asp-validation-for="username"></span>
+      </div></div></div>
+
+     <div class="row">
+        <div class="col-xs-6">
+        <div class="form-group">
+        <span>Email</span>
+        <input type="text" asp-for="email" />
+         <span asp-validation-for="email"></span>
+      </div></div></div>
+
+     <div class="row">
+        <div class="col-xs-6">
+        <div class="form-group">
+        <span>password</span>
+        <input type="password" asp-for="password"/>
+         <span asp-validation-for="password"></span>
+      </div></div></div>
+
+      <div class="row">
+        <div class="col-xs-6">
+        <div class="form-group">
+        <span>Confirem Password</span>
+        <input type="password" asp-for="confirem"/>
+         <span asp-validation-for="confirem"></span>
+     </div></div></div>
+
+     <div class="row">
+        <div class="col-xs-6">
+        <div class="form-group">
+       <input type="submit" value="Create Account" class="btn btn-primary" asp-action="CreateAccount" />
+     </div></div></div></div>
+     </form>
+}

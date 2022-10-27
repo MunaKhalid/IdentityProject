@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "defaultProvider": "jsdelivr",
+  "libraries": [
+    {
+      "library": "bootstrap@3.4.1",
+      "destination": "wwwroot/bootstrap/"
+    },
+    {
+      "library": "bootstrap@4.3.1",
+      "destination": "wwwroot/bootstrap/"
+    }
+  ,
+{
+  "provider": "jsdelivr",
+  "library": "bootstrap@4.3.1",
+  "destination": "wwwroot/bootstrap/"
+}
+,
+{
+  "provider": "jsdelivr",
+  "library": "bootstrap@3.4.1",
+  "destination": "wwwroot/bootstrap/"
+}
+,
+{
+  "provider": "jsdelivr",
+  "library": "bootstrap@3.4.1",
+  "destination": "wwwroot/bootstrap/"
+}
+]
+}

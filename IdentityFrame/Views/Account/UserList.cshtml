@@ -1,0 +1,38 @@
+﻿@model List<ApplicaionUser>
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+@section Body{
+ 
+
+  <table class="table table-bordered table-striped table-hover">
+      <thead>
+          <tr>
+              <th>
+                  Name
+              </th>
+              <th>
+                  Email
+              </th>
+              <th>Phone
+
+              </th>
+          </tr>
+      </thead>
+      <tbody>
+          @foreach(ApplicaionUser item in Model)
+          {
+          <tr>
+              <td>@item.Name   </td>
+              <td>  @item.Email </td>
+              <td>@item.PhoneNumber</td>
+              <td> 
+                  <a class="btn btn-primary" asp-action="UserRole" asp-route-UserId="@item.Id" asp-route-name="@item.Name">Add Role</a>
+              </td>
+        </tr>
+          }
+      </tbody>
+
+  </table>
+
+}
